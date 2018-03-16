@@ -1,0 +1,45 @@
+ <DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Title Case</title>
+
+    <style>
+
+    </style>
+
+</head>
+
+
+<script>
+
+function titleCase(str) {
+  var strArr = str.split(" ");
+  var indivWordArr = [];
+  var completedArr = [];
+  console.log(strArr);
+  for (var x = 0; x < strArr.length; x++) {
+    indivWordArr.push(strArr[x]);
+    completedArr.push(indivWordArr[0].toUpperCase);
+    console.log(completedArr);
+    indivWordArr.shift();
+    
+  }
+  return str;
+}
+
+titleCase("I'm a little tea pot");
+
+
+
+
+</script>
+
+
+<body>
+
+</body>
+
+</html>
